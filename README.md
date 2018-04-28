@@ -70,10 +70,10 @@ dna3 = dna + dna2
 print ( "".join(dna3.decode()) )
 ```
 
-BioMba
+BioAba
 ------
 
-BioMba contains two different class similar to biopython `SeqRecord` and `MultipleSeqAlignement`. These class are designed to produce multiple sequences alignment without string objects. The current object contains basic methods to slice the alignment and to save it into several formats (for now only fasta, phylip, structure and nexus are available).
+BioAba contains two different class similar to biopython `SeqRecord` and `MultipleSeqAlignement`. These class are designed to produce multiple sequences alignment without string objects. The current object contains basic methods to slice the alignment and to save it into several formats (for now only fasta, phylip, structure and nexus are available).
 
 ```python
 from random import choice
