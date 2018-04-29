@@ -49,6 +49,9 @@ class BitDict() :
     def encode(self, elements) :
         # Encode list of values into one single bitarray
 
+        if hasattr(elements, '__len__') and len(elements) == 1 :
+            return self.encode_element(elements[0])
+
         for element in set(elements) :
             try : 
                 self.encode_element(element)
